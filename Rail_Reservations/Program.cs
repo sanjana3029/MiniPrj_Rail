@@ -374,35 +374,52 @@ namespace Rail_Reservations
 
         }
 
-//==================================Cancel trains========================================
+ //==================================Cancel trains=======================================
         static void Cancel_train()
-        {  
-                Console.WriteLine("\nEnter Train Number:");
-                int trainNo = int.Parse(Console.ReadLine());
+        {
+            Console.WriteLine("Enter Train Number:");
+            int trainNo = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("\nEnter Number of Seats to Cancel:");
-                int noOfSeats = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Number of Seats to Cancel:");
+            int noOfSeats = int.Parse(Console.ReadLine());
 
-                Console.WriteLine("\nEnter Refund Amount:");
-                decimal refundAmount = decimal.Parse(Console.ReadLine());
+            // Assume you have a method to calculate the refund amount based on the number of canceled seats
+            decimal refundAmount = CalculateRefundAmount(trainNo, noOfSeats);
 
-                Console.WriteLine("\nEnter Booking ID:");
-                int bookingId = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Booking ID:");
+            int bookingId = int.Parse(Console.ReadLine());
+
             try
             {
                 // Call the stored procedure to cancel the ticket
-                RR.CANCELTICKET(trainNo, noOfSeats, refundAmount,bookingId);
+                RR.CANCELTICKET(trainNo, noOfSeats, refundAmount, bookingId);
                 RR.SaveChanges();
-               Console.WriteLine("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Cancellation successful!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+
+                // Deduct the refund amount from the total booking amount
+                var booking = RR.BOOKING_TICKETS.FirstOrDefault(b => b.BOOK_ID == bookingId);
+                if (booking != null)
+                {
+                    booking.BOOK_AMOUNT -= refundAmount;
+                    RR.SaveChanges();
+                }
+
+                Console.WriteLine("Cancellation successful!");
+                Console.WriteLine("Ticket Canceled!");
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"An error occurred: {ex.Message}");
             }
-            Console.WriteLine("\n!!!!!!!!!!!!!!!!!!!!!!!!!Ticket Canceled!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         }
 
-//============================Display All Booking Details======================================
+  // Method to calculate the refund amount based on the number of canceled seats
+        static decimal CalculateRefundAmount(int trainNo, int noOfSeats)
+        {
+            // Assume a simple refund policy where each canceled seat gets a fixed refund amount
+            decimal refundPerSeat = 50.00m; // Adjust this value based on your policy
+            return noOfSeats * refundPerSeat;
+        }
+ //============================Display All Booking Details======================================
         static void DisplayAllBooking_Details()
         {
             try 
