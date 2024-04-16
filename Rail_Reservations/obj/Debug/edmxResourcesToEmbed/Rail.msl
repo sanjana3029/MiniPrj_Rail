@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RAIL_RESERVATIONModelStoreContainer" CdmEntityContainer="RAIL_RESERVATIONEntities">
+    <EntitySetMapping Name="ADMIN_LOGIN">
+      <EntityTypeMapping TypeName="RAIL_RESERVATIONModel.ADMIN_LOGIN">
+        <MappingFragment StoreEntitySet="ADMIN_LOGIN">
+          <ScalarProperty Name="ADMIN_ID" ColumnName="ADMIN_ID" />
+          <ScalarProperty Name="ADMIN_NAME" ColumnName="ADMIN_NAME" />
+          <ScalarProperty Name="APASSWORD" ColumnName="APASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BOOKING_TICKETS">
+      <EntityTypeMapping TypeName="RAIL_RESERVATIONModel.BOOKING_TICKETS">
+        <MappingFragment StoreEntitySet="BOOKING_TICKETS">
+          <ScalarProperty Name="BOOK_ID" ColumnName="BOOK_ID" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="TRAINNO" ColumnName="TRAINNO" />
+          <ScalarProperty Name="CLASSNAME" ColumnName="CLASSNAME" />
+          <ScalarProperty Name="BOOKING_DATE" ColumnName="BOOKING_DATE" />
+          <ScalarProperty Name="DATEOF_TRAVEL" ColumnName="DATEOF_TRAVEL" />
+          <ScalarProperty Name="No_OF_TICKETS" ColumnName="No_OF_TICKETS" />
+          <ScalarProperty Name="BOOK_AMOUNT" ColumnName="BOOK_AMOUNT" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CANCEL_TICKET">
+      <EntityTypeMapping TypeName="RAIL_RESERVATIONModel.CANCEL_TICKET">
+        <MappingFragment StoreEntitySet="CANCEL_TICKET">
+          <ScalarProperty Name="CANCEL_ID" ColumnName="CANCEL_ID" />
+          <ScalarProperty Name="DATE_OF_CANCEL" ColumnName="DATE_OF_CANCEL" />
+          <ScalarProperty Name="TRAINNO" ColumnName="TRAINNO" />
+          <ScalarProperty Name="NO_OF_SEATS" ColumnName="NO_OF_SEATS" />
+          <ScalarProperty Name="REFUND" ColumnName="REFUND" />
+          <ScalarProperty Name="BOOK_ID" ColumnName="BOOK_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLASS_DETAILS">
+      <EntityTypeMapping TypeName="RAIL_RESERVATIONModel.CLASS_DETAILS">
+        <MappingFragment StoreEntitySet="CLASS_DETAILS">
+          <ScalarProperty Name="CLASS_ID" ColumnName="CLASS_ID" />
+          <ScalarProperty Name="TRAINNO" ColumnName="TRAINNO" />
+          <ScalarProperty Name="CLASSNAME" ColumnName="CLASSNAME" />
+          <ScalarProperty Name="TOTALSEATS" ColumnName="TOTALSEATS" />
+          <ScalarProperty Name="AVAILABLESEATS" ColumnName="AVAILABLESEATS" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRAINS">
+      <EntityTypeMapping TypeName="RAIL_RESERVATIONModel.TRAIN">
+        <MappingFragment StoreEntitySet="TRAINS">
+          <ScalarProperty Name="TRAINNO" ColumnName="TRAINNO" />
+          <ScalarProperty Name="TRAINNAME" ColumnName="TRAINNAME" />
+          <ScalarProperty Name="SOURCE" ColumnName="SOURCE" />
+          <ScalarProperty Name="DESTINATION" ColumnName="DESTINATION" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USER_LOGIN">
+      <EntityTypeMapping TypeName="RAIL_RESERVATIONModel.USER_LOGIN">
+        <MappingFragment StoreEntitySet="USER_LOGIN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UNAME" ColumnName="UNAME" />
+          <ScalarProperty Name="UPASSWORD" ColumnName="UPASSWORD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ADD_CLASS_DETAILS" FunctionName="RAIL_RESERVATIONModel.Store.ADD_CLASS_DETAILS" />
+    <FunctionImportMapping FunctionImportName="ADD_TRAINS" FunctionName="RAIL_RESERVATIONModel.Store.ADD_TRAINS" />
+    <FunctionImportMapping FunctionImportName="CANCELTICKET" FunctionName="RAIL_RESERVATIONModel.Store.CANCELTICKET" />
+    <FunctionImportMapping FunctionImportName="BookTicket" FunctionName="RAIL_RESERVATIONModel.Store.BookTicket" />
+  </EntityContainerMapping>
+</Mapping>
