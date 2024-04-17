@@ -17,89 +17,145 @@ namespace Rail_Reservations
             Console.WriteLine("                               |   Welcome to Rail Reservation      |                                   ");
             Console.WriteLine("                               |                                    |                                   ");
             Console.WriteLine("                               **************************************                                   ");
-            Console.WriteLine("\n1. Enter 1 to Login as Admin");
-            Console.WriteLine("\n2. Enter 2 to Login as User");
-            Console.WriteLine("\n3. Enter 3 to Exit");
-            Console.WriteLine("\n Enter Your Choice : ");
-            string LoginType = Console.ReadLine();
-            switch (LoginType)
+
+            bool exitRequested = false;
+            while (!exitRequested)
             {
-                case "1":
-                    AdminCall();
-                    break;
-                case "2":
-                   UserLogin();
-                    break;
-                case "3":
-                    Console.WriteLine("\nExiting From the train ticket booking app...");
-                    break;
-                default:
-                    Console.WriteLine(" \nPlease enter a valid option.");
-                    break;
+                Console.WriteLine("\n1. Enter 1 to Login as Admin");
+                Console.WriteLine("\n2. Enter 2 to Login as User");
+                Console.WriteLine("\n3. Enter 3 to Exit");
+                Console.WriteLine("\n Enter Your Choice : ");
+                string LoginType = Console.ReadLine();
+                switch (LoginType)
+                {
+                    case "1":
+                        AdminCall();
+                        exitRequested = true;
+                        break;
+                    case "2":
+                        UserLogin();
+                        exitRequested = true;
+                        break;
+                    case "3":
+                        Console.WriteLine("\nExiting From the train ticket booking app...");
+                        exitRequested = true;
+                        break;
+                    default:
+                        Console.WriteLine(" \nPlease enter a valid option.");
+                        break;
+                }
             }
             Console.Read();
         }
 
- //====================================== Admin login==============================================================================
+        //====================================== Admin login==============================================================================
         public static void AdminCall()
         {
-            Console.WriteLine("\nEnter Admin ID:");
-            int adminid = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("\nEnter Admin Name:");
-            string adminName = Console.ReadLine();
+                Console.WriteLine("\nEnter Admin ID:");
+                int adminid = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("\nEnter Password:");
-            string password = ReadPassword();
+                Console.WriteLine("\nEnter Admin Name:");
+                string adminName = Console.ReadLine();
 
-            var admin = RR.ADMIN_LOGIN.FirstOrDefault(a => a.ADMIN_NAME == adminName && a.APASSWORD == password);
+                Console.WriteLine("\nEnter Password:");
+                string password = ReadPassword();
+
+                var admin = RR.ADMIN_LOGIN.FirstOrDefault(a => a.ADMIN_NAME == adminName && a.APASSWORD == password);
 
             if (admin != null)
             {
-                Console.WriteLine("\nAdmin login successful!");
+                bool exitRequested = false;
+                do
+                {
+                    Console.WriteLine("\nAdmin login successful!");
                 Console.WriteLine("\nPress 1 for Add Trains");
                 Console.WriteLine("\nPress 2 for Modify Trains");
                 Console.WriteLine("\nPress 3 for Delete train");
-                Console.WriteLine("\nPress 4 for Exit");
-                string res = Console.ReadLine();
-                switch (res)
-                {
-                    case "1":
-                        Console.WriteLine("\nPlease Add The Trains");
-                        Add_Trains();
-                        Console.WriteLine("\n!!!!!!!!!!!!!!!!!Train Added Successfully!!!!!!!!!!!!!!!!!!!!!!!");
-                        DisplayTrains_details();
-                        break;
-                    case "2":
-                        Console.WriteLine("\nPlease modify the train");
-                        Modify_train();
-                        Console.WriteLine("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!Trains has been modify successfully!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                        DisplayTrains_details();
-                        break;
-                    case "3":
-                        // Prompt for train number to delete
-                        Console.WriteLine("\nPlease enter the Train Number to Delete the Train");
-                        int trainNoToDelete = int.Parse(Console.ReadLine());
-                        // Delete the train
-                        Delete_Trains(trainNoToDelete);
-                        DisplayTrains_details();
-                        Console.WriteLine("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Train deleted successfully!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-                        break;
-                    case "4":
-                        Console.WriteLine("\nExiting from the train ticket booking app...");
-                        break;
-                    default:
-                        Console.WriteLine("Enter valid number");
-                        break;
+                Console.WriteLine("\nPress 4 for Display All Train Details");
+                Console.WriteLine("\nPress 5 for Exit");
+               
+                    Console.WriteLine("\nEnter Your Choice 4");
+                    string res = Console.ReadLine();
+                    switch (res)
+                    {
+                        case "1":
+                            Console.WriteLine("\nPlease Add The Trains");
+                            Add_Trains();
+                            Console.WriteLine("\n!!!!!!!!!!!!!!!!!Train Added Successfully!!!!!!!!!!!!!!!!!!!!!!!");
+                            DisplayTrains_details();
+                            exitRequested = true;
+                            break;
+                        case "2":
+                            DisplayTrains_details(); // Display train details before modification
+                            Console.WriteLine("\nDisplayTrains_details() method completed. Continuing...");
+                            Modify_train(); // Modify the train
+                            Console.WriteLine("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!Trains has been modify successfully!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                            DisplayTrains_details(); // Display updated train details after modification
+                            exitRequested = true;
+                            break;
+                        case "3":
+                            // Prompt for train number to delete
+                            Console.WriteLine("\nPlease enter the Train Number to Delete the Train:");
+                            DisplayTrains_details();
+
+                            int trainNoToDelete;
+                            if (!int.TryParse(Console.ReadLine(), out trainNoToDelete))
+                            {
+                                Console.WriteLine("Invalid input. Please enter a valid Train Number.");
+                                break;
+                            }
+
+                            // Attempt to delete the train
+                            Delete_Trains(trainNoToDelete);
+                            Console.WriteLine("Train deleted successfully.");
+                            DisplayTrains_details();
+                            break;
+
+
+
+
+                        //case "3":
+                        //    // Prompt for train number to delete
+                        //    Console.WriteLine("\nPlease enter the Train Number to Delete the Train");
+                        //    DisplayTrains_details();
+                        //    int trainNoToDelete;
+                        //    if (!int.TryParse(Console.ReadLine(), out trainNoToDelete))
+                        //    {
+                        //        Console.WriteLine("Invalid input. Please enter a valid Train Number.");
+                        //        break;
+                        //    }
+                        //    // Delete the train
+                        //    Delete_Trains(trainNoToDelete);
+                        //    DisplayTrains_details();
+                        //    Console.WriteLine("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Train deleted successfully!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                        //    exitRequested = true;
+                        //    break;
+                        case "4":
+                            Console.WriteLine("\n Here is Your Train Details...");
+                            DisplayTrains_details();
+                            Console.WriteLine("\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Train Details !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                            exitRequested = true;
+                            break;
+                        case "5":
+                            Console.WriteLine("\nExiting from the train ticket booking app...");
+                            exitRequested = true;
+                            break;
+                        default:
+                            Console.WriteLine("Enter valid number");
+                            break;
+                    }
                 }
-            }
+                while (!exitRequested);
+            } 
             else
             {
                 Console.WriteLine("Invalid admin credentials. Login failed.");
                 Console.ReadLine();
                 Environment.Exit(0);
             }
-        }
+        } 
+        
  //===============================================Password ==============================================================================
         public static string ReadPassword()
         {
@@ -166,7 +222,7 @@ namespace Rail_Reservations
                     RR.SaveChanges();
                 }           
         }
- //=========================================Add class details===================================================
+ //=========================================Add class details==============================================================
         static void ADD_CLASS_DETAILS()
         {
             Console.WriteLine("\n Add Train Classes Deatils");
@@ -188,36 +244,44 @@ namespace Rail_Reservations
                     cd.AMOUNT = int.Parse(Console.ReadLine());
                     RR.CLASS_DETAILS.Add(cd);
                     RR.SaveChanges();
-
                 }
-
             }
-
         }
 
- //=============================== Display train details==================================================================
+ //================================================Display train details===========================================================
         public static void DisplayTrains_details()
         {
             var traindata = RR.TRAINS.ToList();
+            var allTicketClassDetails = RR.CLASS_DETAILS.ToList();
 
             Console.WriteLine("=======================================================================================");
             Console.WriteLine("                               ALL TRAIN DETAILS                                        ");
             Console.WriteLine("========================================================================================");
 
-            Console.WriteLine("| Train No |    Train Name    |    Source    |   Destination   |   Status   |");
-
             foreach (var train in traindata)
             {
-                Console.WriteLine("| {0,-8} | {1,-10} | {2,-10} | {3,-12} | {4,-7} |",
-                                  train.TRAINNO, train.TRAINNAME, train.SOURCE, train.DESTINATION, train.STATUS);
-                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                Console.WriteLine("| {0,-8} | {1,-20} | {2,-12} | {3,-15} | {4,-10} |",
+                    train.TRAINNO, train.TRAINNAME, train.SOURCE, train.DESTINATION, train.STATUS);
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+                var trainClassDetails = allTicketClassDetails.Where(c => c.TRAINNO == train.TRAINNO);
+
+                foreach (var ticketClassDetail in trainClassDetails)
+                {
+                    Console.WriteLine("| Class: {0,-10} | Total Seats: {1,-3} | Available Seats: {2,-3} | Fare Amount: {3,-8} |",
+                        ticketClassDetail.CLASSNAME, ticketClassDetail.TOTALSEATS,
+                        ticketClassDetail.AVAILABLESEATS, ticketClassDetail.AMOUNT);
+                }
+
+                Console.WriteLine(); // Add a blank line between train details
             }
 
+            Console.WriteLine("=======================================================================================");
+            Console.WriteLine("\nPress Enter to continue...");
             Console.ReadLine();
-            Environment.Exit(0);
         }
 
- //=========================== User login=====================================================================================
+//=========================== User login=====================================================================================
         public static void UserLogin()
         {
             Console.WriteLine("\n**************************************");
@@ -249,10 +313,11 @@ namespace Rail_Reservations
                         Console.WriteLine("\nBook Tickets :");
                         BookingTicket();
                         Console.WriteLine("\n!!!!!!!!!!!!!!!!!!!!Booked successfully!!!!!!!!!!!!!!!!!!!!!");
-                        //DisplayBooking_Details();
+                        DisplayAllBooking_Details();
                         break;
                     case "2":
-                        Console.WriteLine("\nCancel Tickets: ");;
+                        Console.WriteLine("\nCancel Tickets: ");
+                        //DisplayAllBooking_Details();
                         Cancel_train();
                         Console.WriteLine("\n!!!!!!!!!!!!!Canceled successfully!!!!!!!!!");
                         break;
@@ -279,16 +344,16 @@ namespace Rail_Reservations
             }
         }
 
-//=============================Delete trains===============================================
-        static void Delete_Trains(int trainNo)
+ //=============================Delete trains==================================================================
+        static void Delete_Trains(int trainNoToDelete)
         {
             using (var context = new RAIL_RESERVATIONEntities())
             {
-                var trainToDelete = context.TRAINS.FirstOrDefault(t => t.TRAINNO == trainNo);
+                var trainToDelete = context.TRAINS.FirstOrDefault(t => t.TRAINNO == trainNoToDelete);
                 if (trainToDelete != null)
                 {
                     // Check if there are any related booking tickets for the train
-                    var relatedBookings = context.BOOKING_TICKETS.Any(b => b.TRAINNO == trainNo);
+                    var relatedBookings = context.BOOKING_TICKETS.Any(b => b.TRAINNO == trainNoToDelete);
                     if (relatedBookings)
                     {
                         Console.WriteLine("\nCannot delete the train because there are related booking tickets.");
@@ -296,7 +361,7 @@ namespace Rail_Reservations
                     }
 
                     // Delete related records from the CLASS_DETAILS table
-                    var classDetailsToDelete = context.CLASS_DETAILS.Where(cd => cd.TRAINNO == trainNo).ToList();
+                    var classDetailsToDelete = context.CLASS_DETAILS.Where(cd => cd.TRAINNO == trainNoToDelete).ToList();
                     context.CLASS_DETAILS.RemoveRange(classDetailsToDelete);
 
                     // Delete the train
@@ -308,9 +373,9 @@ namespace Rail_Reservations
                 {
                     Console.WriteLine("\nTrain not found.");
                 }
+
             }
         }
-
 //==============================Booking ticket============================================
         static void BookingTicket()
         {
@@ -360,7 +425,6 @@ namespace Rail_Reservations
                 trainToUpdate.DESTINATION = Console.ReadLine();
                 Console.WriteLine("\nEnter Status:");
                 trainToUpdate.STATUS = Console.ReadLine();
-
 
                 RR.SaveChanges();
                 Console.WriteLine("\n!!!!!!!!!!!!!!!!!!Updated Train successfully!!!!!!!!!!!!!!!!!!!");
