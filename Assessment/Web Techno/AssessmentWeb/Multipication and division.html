@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+
+<link rel="stylesheet" type="text/css" href="Style.css">
+
+<script>
+    function calculate(operation) {
+        // Get the values from the input boxes
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+      
+        // Perform the operation based on the button clicked
+        if (operation === 'Multiply') {
+            var result = num1 * num2;
+        } else if (operation === 'Divide') {
+            if (num2 === 0) {
+                alert("Cannot divide by zero!");
+                return;
+            }
+            var result = num1 / num2;
+        }
+        
+        // Display the result
+        document.getElementById("result").innerText = "The result is: " + result;
+    }
+</script>
+</head>
+<body>
+    <h2>Calculator</h2>
+    <label for="num1">1st Number : </label>
+    <input type="text" id="num1">
+    <br>
+    <label for="num2">2nd Number : </label>
+    <input type="text" id="num2">
+    <br>
+    <button onclick="calculate('Multiply')">Multiply</button>
+    <button onclick="calculate('Divide')">Divide</button>
+    <br>
+    <div id="result"></div>
+</body>
+</html>
