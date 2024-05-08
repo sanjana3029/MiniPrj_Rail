@@ -1,67 +1,62 @@
 ﻿using Ecart_Application.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Ecart_Application.Repository
 {
     public class OrderRepository : IOrderRepository
     {
-        private readonly NorthwindContext _context;
+        private List<Order> _orders; // Assuming orders are stored in-memory in a list
 
-        public OrderRepository(NorthwindContext context)
+        public OrderRepository()
         {
-            _context = context;
+            // Initialize the list of orders (can be replaced with database access)
+            _orders = new List<Order>();
         }
-        public void PlaceOrder(Order order)
+
+        public void Create(Order order)
         {
-            //    _context.Orders.Add(order);
-            //    _context.SaveChanges();
-            //}
-            if (_context.Customers.Any(c => c.CustomerId == order.CustomerId))
-            {
-                _context.Orders.Add(order);
-                _context.SaveChanges();
-            }
-            else
-            {
-                // Handle the case when the provided customer ID does not exist
-                throw new ArgumentException("Invalid CustomerID");
-            }
+            // Add the order to the list of orders
+            _orders.Add(order);
         }
 
         public Order GetOrderById(int orderId)
         {
-            //throw new NotImplementedException();
-            return _context.Orders.FirstOrDefault(o => o.OrderId == orderId);
+            // Find and return the order by its ID
+            return _orders.Find(o => o.OrderId == orderId);
         }
-   
+
         public List<Order> GetOrdersByDate(DateTime? orderDate)
         {
-            // throw new NotImplementedException();
-            //return _context.Orders.Where(o => o.OrderDate.Date == orderDate.Date).ToList();
             if (orderDate.HasValue)
             {
-                return _context.Orders.Where(o => o.OrderDate.HasValue && o.OrderDate.Value.Date == orderDate.Value.Date).ToList();
+                // Filter orders by the specified date and return the list
+                //return _orders.FindAll(o => o.OrderDate.Date == orderDate.Value.Date);
+                return _orders.FindAll(o => o.OrderDate.HasValue && o.OrderDate.Value.Date == orderDate.Value.Date);
+
             }
             else
             {
-                // Handle the case when orderDate is null
-                // For example, return all orders if orderDate is not specified
-                return _context.Orders.ToList();
+                // If orderDate is null, return an empty list or handle it as per your requirement
+                return new List<Order>();
             }
         }
 
         public List<Order> GetOrdersByCustomer(string customerId)
         {
-            return _context.Orders.Where(o => o.CustomerId == customerId).ToList();
+            // Filter orders by the specified customer ID and return the list
+            return _orders.FindAll(o => o.Customer.CustomerId == customerId);
         }
+
         public Order GetHighestOrder()
         {
-            //return _context.Orders.OrderByDescending(o => o.Total).FirstOrDefault();
-            throw new NotImplementedException();
+            // Find and return the order with the highest order ID
+            return _orders.Count > 0 ? _orders[_orders.Count - 1] : null;
+        }
+        public IEnumerable<Order> GetOrders()
+        {
+            // Return all orders
+            return _orders.ToList();
         }
     }
 }

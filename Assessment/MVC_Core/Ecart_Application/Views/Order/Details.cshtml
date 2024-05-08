@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Ecart_Application.Models.Order
+
+<h1>Order Details</h1>
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>Order ID:</dt>
+        <dd>@Model.OrderId</dd>
+        <dt>Customer ID:</dt>
+        <dd>@Model.CustomerId</dd>
+
+        <dt>Order Date:</dt>
+        <dd>@Model.OrderDate</dd>
+
+        <dt>Required Date:</dt>
+        <dd>@Model.RequiredDate</dd>
+
+        <dt>Shipped Date:</dt>
+        <dd>@Model.ShippedDate</dd>
+
+        <dt>Ship Via:</dt>
+        <dd>@Model.ShipVia</dd>
+
+        <dt>Freight:</dt>
+        <dd>@Model.Freight</dd>
+
+        <dt>Ship Name:</dt>
+        <dd>@Model.ShipName</dd>
+
+        <dt>Ship Address:</dt>
+        <dd>@Model.ShipAddress</dd>
+
+        <dt>Ship City:</dt>
+        <dd>@Model.ShipCity</dd>
+
+        <dt>Ship Region:</dt>
+        <dd>@Model.ShipRegion</dd>
+
+        <dt>Ship Postal Code:</dt>
+        <dd>@Model.ShipPostalCode</dd>
+
+        <dt>Ship Country:</dt>
+        <dd>@Model.ShipCountry</dd>
+    </dl>
+</div>

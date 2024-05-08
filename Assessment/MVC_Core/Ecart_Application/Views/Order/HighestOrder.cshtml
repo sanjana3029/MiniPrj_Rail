@@ -4,34 +4,4 @@
 @{
 }
 
-@model Ecart_Application.Models.Order
 
-<h2>Customer who Placed the Highest Order</h2>
-
-<div>
-    <dl class="row">
-        <dt class="col-sm-2">Order ID:</dt>
-        <dd class="col-sm-10">@Model.OrderId</dd>
-
-        <dt class="col-sm-2">Customer ID:</dt>
-        <dd class="col-sm-10">@Model.CustomerId</dd>
-
-        <dt class="col-sm-2">Customer Name:</dt>
-        <dd class="col-sm-10">@Model CustomerName</dd>
-
-        <dt class="col-sm-2">Contact Name:</dt>
-        <dd class="col-sm-10">@Model.Customer.ContactName</dd>
-
-        <dt class="col-sm-2">Contact Title:</dt>
-        <dd class="col-sm-10">@Model.Customer.ContactTitle</dd>
-
-        <dt class="col-sm-2">Address:</dt>
-        <dd class="col-sm-10">@Model.Customer.Address</dd>
-
-        <dt class="col-sm-2">City:</dt>
-        <dd class="col-sm-10">@Model.Customer.City</dd>
-
-        <dt class="col-sm-2">Country:</dt>
-        <dd class="col-sm-10">@Model.Customer.Country</dd>
-    </dl>
-</div>

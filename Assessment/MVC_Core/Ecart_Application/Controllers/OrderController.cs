@@ -1,66 +1,83 @@
-﻿// OrderController.cs
-using Microsoft.AspNetCore.Mvc;
-using Ecart_Application.Repository; // Adjust the namespace as per your project structure
-using Ecart_Application.Models; // Adjust the namespace as per your project structure
+﻿using Microsoft.AspNetCore.Mvc;
+using Ecart_Application.Repository;
+using Ecart_Application.Models;
 using System;
+using System.Collections.Generic;
 
-public class OrderController : Controller
+namespace Ecart_Application.Controllers
 {
-    private readonly IOrderRepository _orderRepository;
-
-    public OrderController(IOrderRepository orderRepository)
+    public class OrderController : Controller
     {
-        _orderRepository = orderRepository;
-    }
+        private readonly IOrderRepository _orderRepository;
 
-    public IActionResult Index()
-    {
-        // Implement action logic here if needed
-        return View();
-    }
-
-    public IActionResult PlaceOrder()
-    {
-        // Implement logic for placing order
-        return View();
-    }
-
-    [HttpPost]
-    public IActionResult PlaceOrder(Order order)
-    {
-        if (ModelState.IsValid)
+        public OrderController(IOrderRepository orderRepository)
         {
-            _orderRepository.PlaceOrder(order);
-            return RedirectToAction(nameof(Index));
+            _orderRepository = orderRepository;
         }
-        return View(order);
-    }
 
-    public IActionResult Details(int id)
-    {
-        var order = _orderRepository.GetOrderById(id);
-        if (order == null)
+        public IActionResult Index()
         {
-            return NotFound();
+            // Get all orders
+            var orders = _orderRepository.GetOrders();
+            return View(orders);
         }
-        return View(order);
-    }
 
-    public IActionResult OrdersByDate(DateTime orderDate)
-    {
-        var orders = _orderRepository.GetOrdersByDate(orderDate);
-        return View(orders);
-    }
+        public IActionResult Details(int id)
+        {
+            var order = _orderRepository.GetOrderById(id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+            return View(order);
+        }
 
-    public IActionResult OrdersByCustomer(string customerId)
-    {
-        var orders = _orderRepository.GetOrdersByCustomer(customerId);
-        return View(orders);
-    }
+        public IActionResult OrdersByDate(DateTime? orderDate)
+        {
+            var orders = _orderRepository.GetOrdersByDate(orderDate);
+            return View(orders);
+        }
 
-    public IActionResult HighestOrder()
-    {
-        var highestOrder = _orderRepository.GetHighestOrder();
-        return View(highestOrder);
+        public IActionResult OrdersByCustomer(string customerId)
+        {
+            var orders = _orderRepository.GetOrdersByCustomer(customerId);
+            return View(orders);
+        }
+
+        public IActionResult HighestOrder()
+        {
+            var highestOrder = _orderRepository.GetHighestOrder();
+            return View(highestOrder);
+        }
+      
+        [HttpGet] // Specify HTTP method
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Order order)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _orderRepository.Create(order);
+                    // After creating the order, retrieve all orders again
+                    var orders = _orderRepository.GetOrders();
+                    return View("Index", orders);
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", $"An error occurred while creating the order: {ex.Message}");
+                }
+            }
+            return View(order);
+        }
+
+
+
     }
 }

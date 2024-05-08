@@ -3,148 +3,173 @@
   "WorkspaceRootPath": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\views\\order\\orderdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:views\\order\\orderdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\views\\order\\placeorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:views\\order\\placeorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:views\\order\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\views\\order\\orderbydate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:views\\order\\orderbydate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\views\\order\\highestorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:views\\order\\highestorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\views\\order\\orderbycustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:views\\order\\orderbycustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:repository\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:views\\order\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\repository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:repository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\views\\order\\highestorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:views\\order\\highestorder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\repository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:repository\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|d:\\mini_project\\assessment\\mvc_core\\ecart_application\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{88272612-C66E-418D-A9B8-4C00E2738025}|Ecart_Application.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\Details.cshtml",
+              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\Details.cshtml",
+              "RelativeToolTip": "Views\\Order\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T09:38:08.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "OrderByDate.cshtml",
+              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\OrderByDate.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\OrderByDate.cshtml",
+              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\OrderByDate.cshtml",
+              "RelativeToolTip": "Views\\Order\\OrderByDate.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAqwBsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T17:20:41.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderByCustomer.cshtml",
+              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\OrderByCustomer.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\OrderByCustomer.cshtml",
+              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\OrderByCustomer.cshtml",
+              "RelativeToolTip": "Views\\Order\\OrderByCustomer.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAqwB4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T12:49:03.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Order\\Index.cshtml",
               "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\Index.cshtml",
               "RelativeToolTip": "Views\\Order\\Index.cshtml",
-              "ViewState": "AQIAAAQAAAAAAAAAAADwvxEAAAAFAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAqwDwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T06:32:31.97Z",
+              "WhenOpened": "2024-05-08T11:26:06.257Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAmwFMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T05:53:40.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Repository\\OrderRepository.cs",
               "RelativeDocumentMoniker": "Repository\\OrderRepository.cs",
               "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Repository\\OrderRepository.cs",
               "RelativeToolTip": "Repository\\OrderRepository.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAIwDgAAAAmAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAYwDsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T05:39:19.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderDetails.cshtml",
-              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\OrderDetails.cshtml",
-              "RelativeDocumentMoniker": "Views\\Order\\OrderDetails.cshtml",
-              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\OrderDetails.cshtml",
-              "RelativeToolTip": "Views\\Order\\OrderDetails.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T06:18:00.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlaceOrder.cshtml",
-              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\PlaceOrder.cshtml",
-              "RelativeDocumentMoniker": "Views\\Order\\PlaceOrder.cshtml",
-              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\PlaceOrder.cshtml",
-              "RelativeToolTip": "Views\\Order\\PlaceOrder.cshtml",
-              "ViewState": "AQIAABcAAAAAAAAAAADwvyQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T06:17:33.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrderbyDate.cshtml",
-              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\OrderbyDate.cshtml",
-              "RelativeDocumentMoniker": "Views\\Order\\OrderbyDate.cshtml",
-              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\OrderbyDate.cshtml",
-              "RelativeToolTip": "Views\\Order\\OrderbyDate.cshtml",
-              "ViewState": "AQIAACoAAAAAAAAAAADwvy4AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T06:19:16.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HighestOrder.cshtml",
-              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\HighestOrder.cshtml",
-              "RelativeDocumentMoniker": "Views\\Order\\HighestOrder.cshtml",
-              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\HighestOrder.cshtml",
-              "RelativeToolTip": "Views\\Order\\HighestOrder.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAADgvxMAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-08T06:20:47.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
-              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "Controllers\\OrderController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBAAAAAFAAAA",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\Create.cshtml",
+              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\Create.cshtml",
+              "RelativeToolTip": "Views\\Order\\Create.cshtml",
+              "ViewState": "AQIAACMAAAAAAAAAAAAmwFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T11:14:45.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Repository\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IOrderRepository.cs",
+              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Repository\\IOrderRepository.cs",
+              "RelativeToolTip": "Repository\\IOrderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T05:53:40.692Z",
+              "WhenOpened": "2024-05-08T05:39:07.566Z",
               "EditorCaption": ""
             },
             {
@@ -155,48 +180,74 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA8AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-05-08T05:42:29.082Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAArAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAmwCYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T05:42:25.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
+              "Title": "HighestOrder.cshtml",
+              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\HighestOrder.cshtml",
+              "RelativeDocumentMoniker": "Views\\Order\\HighestOrder.cshtml",
+              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Views\\Order\\HighestOrder.cshtml",
+              "RelativeToolTip": "Views\\Order\\HighestOrder.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-08T07:44:50.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
               "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "Controllers\\OrdersController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAQwFgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T06:09:40.313Z",
+              "WhenOpened": "2024-05-08T10:28:49.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IOrderRepository.cs",
-              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Repository\\IOrderRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IOrderRepository.cs",
-              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Repository\\IOrderRepository.cs",
-              "RelativeToolTip": "Repository\\IOrderRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T05:39:07.566Z",
+              "WhenOpened": "2024-05-08T07:11:17.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "D:\\Mini_Project\\Assessment\\MVC_Core\\Ecart_Application\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHgSURBVEhLtZVdTsJAFIWroTyDK3ELJuCbsA1ZhQRFRETkV6yV8AAsgAI\u002BugW3wAr0RUop7Tj3dmagtLXFhJOc3mEynXu\u002BSWmlg4oQcsSGqOFwSKcIzAcY7rFZdeZkWf42DOMsl7v8ZNsEazAYEMuyXF5zr7nXWG3bJqPRiMznc6Kqb1\u002BtdueUbePSMasoSASiN0sW2AJbwrSRMKwBJZNJKZVOJeJx\u002BaPRbHma\u002BDbAqzOMpBPa5DydxiZsSijGKoo30MZjrH8pm81iVRQFKygmxxNs6K9\u002Bv4/nvlqZ1CticBuOl8IGWS4NogsviWmuSe2p7uH2EMAKTQsn2FUmkxUnEKher4dPjH9ymjogva47BNXHWhgBXCRpomnOxB6KRKCqKhJsznoneUD6BSOoPFSjEUwnByJQlFf8l7rTO6ndyalZcm7TNEn5vhJG4CD8h\u002BAikwkn6HZf8F3jSSu8OfNt/yx0sqIEpbtyOAGsmE4nzsQeikTQ7jwTkxKItCyxX2qenBsIirelcAJAmB2KoNlq4/Psl1Z4K/UuQeGmGIGA6n02xbqPgIBuwH4FqN5o4vMMKYOSBhkI8oVrTwfPBwdWxOQYWt7D/P5duT768D7HJhFtU9MBVj5XyF\u002B59jywJOkX7ucXnGOxDX8AAAAASUVORK5CYII=",
+              "WhenOpened": "2024-05-08T09:01:38.003Z",
               "EditorCaption": ""
             }
           ]

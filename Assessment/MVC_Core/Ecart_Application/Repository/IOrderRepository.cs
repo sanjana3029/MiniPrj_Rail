@@ -6,11 +6,13 @@ namespace Ecart_Application.Repository
 {
     public interface IOrderRepository
     {
-        void PlaceOrder(Order order);
+        void Create(Order order);
         Order GetOrderById(int orderId);
         List<Order> GetOrdersByDate(DateTime? orderDate);
         List<Order> GetOrdersByCustomer(string customerId);
         Order GetHighestOrder();
+        IEnumerable<Order> GetOrders();
+
 
     }
 }

@@ -4,9 +4,13 @@
 @{
 }
 
-@model List<Ecart_Application.Models.Order>
+@model IEnumerable<Ecart_Application.Models.Order>
 
-<h1>Orders By Date</h1>
+@{
+    ViewData["Title"] = "Order By Customer";
+}
+
+<h1>Orders By Customer</h1>
 
 <table class="table">
     <thead>
@@ -45,11 +49,7 @@
                 <td>@order.ShipRegion</td>
                 <td>@order.ShipPostalCode</td>
                 <td>@order.ShipCountry</td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@order.OrderId">Details</a>
-                </td>
             </tr>
         }
     </tbody>
 </table>
-

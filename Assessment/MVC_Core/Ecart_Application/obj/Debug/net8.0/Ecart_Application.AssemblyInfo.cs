@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ecart_Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b644ba2d759ed2eef0bc6c4cea3af5c5bc5e370")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd46f1066778eef54642fa3b6d5db544fa5b4f88")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ecart_Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ecart_Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

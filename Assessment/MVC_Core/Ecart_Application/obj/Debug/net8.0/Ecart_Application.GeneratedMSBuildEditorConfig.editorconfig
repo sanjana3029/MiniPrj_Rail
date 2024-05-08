@@ -54,6 +54,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Mini_Project/Assessment/MVC_Core/Ecart_Application/Views/Order/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Mini_Project/Assessment/MVC_Core/Ecart_Application/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Mini_Project/Assessment/MVC_Core/Ecart_Application/Views/Order/HighestOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSGlnaGVzdE9yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -62,16 +70,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Mini_Project/Assessment/MVC_Core/Ecart_Application/Views/Order/OrderbyDate.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJieURhdGUuY3NodG1s
+[D:/Mini_Project/Assessment/MVC_Core/Ecart_Application/Views/Order/OrderByCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJCeUN1c3RvbWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Mini_Project/Assessment/MVC_Core/Ecart_Application/Views/Order/OrderDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Mini_Project/Assessment/MVC_Core/Ecart_Application/Views/Order/PlaceOrder.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcUGxhY2VPcmRlci5jc2h0bWw=
+[D:/Mini_Project/Assessment/MVC_Core/Ecart_Application/Views/Order/OrderByDate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJCeURhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Mini_Project/Assessment/MVC_Core/Ecart_Application/Views/Shared/Error.cshtml]
