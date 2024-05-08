@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model List<Ecart_Application.Models.Order>
+
+<h2>Orders by Order Date</h2>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer ID</th>
+                <th>Order Date</th>
+                <th>Required Date</th>
+                <th>Shipped Date</th>
+                <th>Ship Via</th>
+                <th>Freight</th>
+                <th>Ship Name</th>
+                <th>Ship Address</th>
+                <th>Ship City</th>
+                <th>Ship Region</th>
+                <th>Ship Postal Code</th>
+                <th>Ship Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.OrderId</td>
+                    <td>@order.CustomerId</td>
+                    <td>@order.OrderDate</td>
+                    <td>@order.RequiredDate</td>
+                    <td>@order.ShippedDate</td>
+                    <td>@order.ShipVia</td>
+                    <td>@order.Freight</td>
+                    <td>@order.ShipName</td>
+                    <td>@order.ShipAddress</td>
+                    <td>@order.ShipCity</td>
+                    <td>@order.ShipRegion</td>
+                    <td>@order.ShipPostalCode</td>
+                    <td>@order.ShipCountry</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No orders found for the specified date.</p>
+}
+
